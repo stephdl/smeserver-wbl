@@ -1,0 +1,133 @@
+<lexicon lang="es">
+    <!-- vim: ft=xml:
+    -->
+
+# WBL_BUTTONS
+
+    <entry>
+            <base>SAVE</base>
+            <trans>Guardar</trans>
+    </entry>
+
+    <entry>
+            <base>PERFORM</base>
+            <trans>Ejecutar</trans>
+    </entry>
+
+# WBL_PAGE_FIRST
+
+    <entry>
+        <base>FORM_TITLE</base>
+        <trans>E-mail WBL</trans>
+    </entry>
+
+    <entry>
+        <base>OPERATION_STATUS_REPORT</base>
+        <trans>Estado de la operación</trans>
+    </entry>
+
+    <entry>
+        <base>FORM_DESCRIPTION</base>
+        <trans><![CDATA[ <p>E-mail traffic is scanned and may be blocked due to the various screening methods enabled. You may use this panel to define e-mail white/black lists.</p> <p>Black lists are used for rejecting e-mail traffic.</p> <p><a class="button-like" href="wbl?page=0&page_stack=&Next=Next&wherenext=WBL_PAGE_BLACK">Black List</a></p> <p><br>White lists are used for accepting e-mail traffic.</p> <p><a class="button-like" href="wbl?page=0&page_stack=&Next=Next&wherenext=WBL_PAGE_WHITE">White List</a></p> ]]></trans>
+    </entry>
+
+# WBL_PAGE_BLACK
+
+    <entry>
+        <base>BLACK_TITLE</base>
+        <trans><![CDATA[ <p>This server includes built-in support for using two external black list methods, DNSBL and RHSBL. It also supports the admin defined black lists, badhelo and badmailfrom.</p> ]]></trans>
+    </entry>
+
+    <entry>
+        <base>DNSBL_DESCRIPTION</base>
+        <trans>DNSBL es una abreviatura de "DNS blacklist". Esta es una lista de direcciones IP conocidas de spammers.</trans>
+    </entry>
+
+    <entry>
+            <base>DNSBL_LABEL</base>
+            <trans>Estado DNSBL</trans>
+    </entry>
+
+    <entry>
+        <base>RHSBL_DESCRIPTION</base>
+        <trans>RHSBL es una abreviatura de "Right Hand Side Blacklist". Esta es una lista de nombres de dominio conocidos de spammers.</trans>
+    </entry>
+
+    <entry>
+            <base>RHSBL_LABEL</base>
+            <trans>Estado RHSBL</trans>
+    </entry>
+
+    <entry>
+        <base>BADHELO_DESCRIPTION</base>
+        <trans>Comprobar el mensaje HELO emitido desde la conexión de un host. Rechazar cualquiera que aparezca en badhelo durante la fase 'helo'.</trans>
+    </entry>
+
+    <entry>
+            <base>BADHELO_LABEL</base>
+            <trans>qpsmtpd badhelo</trans>
+    </entry>
+
+    <entry>
+        <base>BADMAILFROM_DESCRIPTION</base>
+        <trans>Comprobar las direcciones del remitente del sobre (Return-Path). Rechazar cualquier (@host o usuario@host) declarado en badmailfrom durante la fase 'mail'.</trans>
+    </entry>
+
+    <entry>
+        <base>BADMAILFROM_LABEL</base>
+        <trans>qmail badmailfrom</trans>
+    </entry>
+
+# WBL_PAGE_WHITELIST
+
+    <entry>
+        <base>WHITE_TITLE</base>
+        <trans>Utilice este panel para modificar los ajustes de White List de su servidor.</trans>
+    </entry>
+
+    <entry>
+        <base>RRFH_LABEL</base>
+        <trans>Estado Whitelists</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHOSTS_DESCRIPTION</base>
+        <trans>Cualquier IP listada en whitelisthosts estará exenta de cualquier futura validación durante la fase 'connect'.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHOSTS_LABEL</base>
+        <trans>qpsmtpd whitelisthosts</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHELO_DESCRIPTION</base>
+        <trans>Cualquier host que tenga un HELO que coincida con una entrada en whitelisthelo estará exento de cualquier futura validación durante la fase 'helo'.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHELO_LABEL</base>
+        <trans>qpsmtpd whitelisthelo</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTSENDERS_DESCRIPTION</base>
+        <trans>Cualquier remitente de sobre (Return-Path) de un correo (@host o usuario@host) que coincida con una entrada en whitelistsenders estará exento de cualquier futura validación durante la fase 'mail'.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTSENDERS_LABEL</base>
+        <trans>qpsmtpd whitelistsenders</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTFROM_DESCRIPTION</base>
+        <trans>Cualquier remitente de sobre (Return-Path) de un correo (*@host o usuario@host) que coincida con una entrada en whitelist_from estará exento del rechazo de spamassassin.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTFROM_LABEL</base>
+        <trans>spamassassin whitelist_from</trans>
+    </entry>
+
+</lexicon>

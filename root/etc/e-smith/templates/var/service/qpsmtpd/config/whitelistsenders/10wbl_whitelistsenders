@@ -1,0 +1,18 @@
+{ 
+    use esmith::ConfigDB; 
+    
+    my $wdb = esmith::ConfigDB->open_ro('wbl')
+      || die "Unable to open wbl configuration dbase.";
+    my %list = $wdb->get('whitelistsenders')->props;
+    
+    $OUT = '';
+    my $parameter = "";
+    my $value = "";
+    while (($parameter,$value) = each(%list)) {
+        if ($parameter eq "type") {next;}
+ 
+        if ($value eq "White") {
+            $OUT .= "$parameter\n";
+        }
+    } 
+} 

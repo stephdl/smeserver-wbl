@@ -1,0 +1,133 @@
+<lexicon lang="nl">
+    <!-- vim: ft=xml:
+    -->
+
+# WBL_BUTTONS
+
+    <entry>
+            <base>SAVE</base>
+            <trans>Opslaan</trans>
+    </entry>
+
+    <entry>
+            <base>PERFORM</base>
+            <trans>Uitvoeren</trans>
+    </entry>
+
+# WBL_PAGE_FIRST
+
+    <entry>
+        <base>FORM_TITLE</base>
+        <trans>E-mail WBL</trans>
+    </entry>
+
+    <entry>
+        <base>OPERATION_STATUS_REPORT</base>
+        <trans>Operationeel status rapport</trans>
+    </entry>
+
+    <entry>
+        <base>FORM_DESCRIPTION</base>
+        <trans><![CDATA[ <p>E-mail traffic is scanned and may be blocked due to the various screening methods enabled. You may use this panel to define e-mail white/black lists.</p> <p>Black lists are used for rejecting e-mail traffic.</p> <p><a class="button-like" href="wbl?page=0&page_stack=&Next=Next&wherenext=WBL_PAGE_BLACK">Black List</a></p> <p><br>White lists are used for accepting e-mail traffic.</p> <p><a class="button-like" href="wbl?page=0&page_stack=&Next=Next&wherenext=WBL_PAGE_WHITE">White List</a></p> ]]></trans>
+    </entry>
+
+# WBL_PAGE_BLACK
+
+    <entry>
+        <base>BLACK_TITLE</base>
+        <trans><![CDATA[ <p>This server includes built-in support for using two external black list methods, DNSBL and RHSBL. It also supports the admin defined black lists, badhelo and badmailfrom.</p> ]]></trans>
+    </entry>
+
+    <entry>
+        <base>DNSBL_DESCRIPTION</base>
+        <trans>DNSBL is een afkorting voor "DNS BlackList". Het is een lijst van IP adressen die bekend zijn als spammers.</trans>
+    </entry>
+
+    <entry>
+            <base>DNSBL_LABEL</base>
+            <trans>DNSBL status</trans>
+    </entry>
+
+    <entry>
+        <base>RHSBL_DESCRIPTION</base>
+        <trans>RHSBL is een afkorting voor "Right Hand Side Blacklist". Het is een lijst van domein namen die bekend zijn als spammers.</trans>
+    </entry>
+
+    <entry>
+            <base>RHSBL_LABEL</base>
+            <trans>RHSBL status</trans>
+    </entry>
+
+    <entry>
+        <base>BADHELO_DESCRIPTION</base>
+        <trans>Controleer een HELO bericht van een inkomende host. Weiger ieder die voorkomt in 'badhelo' gedurende het 'helo' stadium.</trans>
+    </entry>
+
+    <entry>
+            <base>BADHELO_LABEL</base>
+            <trans>qpsmtpd badhelo</trans>
+    </entry>
+
+    <entry>
+        <base>BADMAILFROM_DESCRIPTION</base>
+        <trans>Controleer de envelop verzender adres. Weiger ieder die voorkomt (@host of gebruiker@host) in 'badmailfrom' gedurende het 'mail' stadium.</trans>
+    </entry>
+
+    <entry>
+        <base>BADMAILFROM_LABEL</base>
+        <trans>qmail badmailfrom</trans>
+    </entry>
+
+# WBL_PAGE_WHITELIST
+
+    <entry>
+        <base>WHITE_TITLE</base>
+        <trans>Gebruik dit paneel om de Witte Lijst instellingen van uw server te wijzigen.</trans>
+    </entry>
+
+    <entry>
+        <base>RRFH_LABEL</base>
+        <trans>Witte lijst status</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHOSTS_DESCRIPTION</base>
+        <trans>Elk IP adres dat voorkomt in whitelisthosts zal uitgezonderd zijn van verdere validatie tijdens het 'verbindings' stadium.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHOSTS_LABEL</base>
+        <trans>qpsmtpd whitelisthosts</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHELO_DESCRIPTION</base>
+        <trans>Elke host die een HELO doet en voorkomt in whitelisthelo zal uitgezonderd zijn van verdere validatie gedurende het 'helo' stadium.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHELO_LABEL</base>
+        <trans>qpsmtpd whitelisthelo</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTSENDERS_DESCRIPTION</base>
+        <trans>Elke envelop verzender van een mail (@host of gebruiker@host) die voorkomt in whitelistsenders zal uitgezonderd zijn van verdere validatie gedurende het 'mail' stadium.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTSENDERS_LABEL</base>
+        <trans>qpsmtpd whitelistsenders</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTFROM_DESCRIPTION</base>
+        <trans>Elke envelop verzender van een mail (*@host of gebruiker@host) en voorkomt in whitelist_from zal worden uitgezonderd van spamassassin weigering.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTFROM_LABEL</base>
+        <trans>spamassassin whitelist_from</trans>
+    </entry>
+
+</lexicon>

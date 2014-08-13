@@ -1,0 +1,133 @@
+<lexicon lang="de">
+    <!-- vim: ft=xml:
+    -->
+
+# WBL_BUTTONS
+
+    <entry>
+            <base>SAVE</base>
+            <trans>Speichern</trans>
+    </entry>
+
+    <entry>
+            <base>PERFORM</base>
+            <trans>Ausführen</trans>
+    </entry>
+
+# WBL_PAGE_FIRST
+
+    <entry>
+        <base>FORM_TITLE</base>
+        <trans>E-Mail WBL</trans>
+    </entry>
+
+    <entry>
+        <base>OPERATION_STATUS_REPORT</base>
+        <trans>Statusbericht</trans>
+    </entry>
+
+    <entry>
+        <base>FORM_DESCRIPTION</base>
+        <trans><![CDATA[ <p>E-mail traffic is scanned and may be blocked due to the various screening methods enabled. You may use this panel to define e-mail white/black lists.</p> <p>Black lists are used for rejecting e-mail traffic.</p> <p><a class="button-like" href="wbl?page=0&page_stack=&Next=Next&wherenext=WBL_PAGE_BLACK">Black List</a></p> <p><br>White lists are used for accepting e-mail traffic.</p> <p><a class="button-like" href="wbl?page=0&page_stack=&Next=Next&wherenext=WBL_PAGE_WHITE">White List</a></p> ]]></trans>
+    </entry>
+
+# WBL_PAGE_BLACK
+
+    <entry>
+        <base>BLACK_TITLE</base>
+        <trans><![CDATA[ <p>This server includes built-in support for using two external black list methods, DNSBL and RHSBL. It also supports the admin defined black lists, badhelo and badmailfrom.</p> ]]></trans>
+    </entry>
+
+    <entry>
+        <base>DNSBL_DESCRIPTION</base>
+        <trans>DNSBL ist die Abkürzung für "DNS blacklist". Es ist eine Liste von IP Adressen bekannter Spammer.</trans>
+    </entry>
+
+    <entry>
+            <base>DNSBL_LABEL</base>
+            <trans>DNSBL Status</trans>
+    </entry>
+
+    <entry>
+        <base>RHSBL_DESCRIPTION</base>
+        <trans>RHSBL ist die Abkürzung für "Right Hand Side blacklist". Es ist eine Liste von Domainnamen bekannter Spammer.</trans>
+    </entry>
+
+    <entry>
+            <base>RHSBL_LABEL</base>
+            <trans>RHSBL Status</trans>
+    </entry>
+
+    <entry>
+        <base>BADHELO_DESCRIPTION</base>
+        <trans>Prüfe die HELO Nachricht eines sich verbindenden Hosts. Weise jene Hosts die in der Liste 'badhelo' stehen noch während der 'helo' Verbindungsphase zurück.</trans>
+    </entry>
+
+    <entry>
+            <base>BADHELO_LABEL</base>
+            <trans>badhelo</trans>
+    </entry>
+
+    <entry>
+        <base>BADMAILFROM_DESCRIPTION</base>
+        <trans>Prüfe die 'envelope sender' Adressen. Weise jene Sender (@host oder user@host) die in der Liste 'badmailform' stehen noch während der 'mail' Verbindungsphase zurück.</trans>
+    </entry>
+
+    <entry>
+        <base>BADMAILFROM_LABEL</base>
+        <trans>badmailfrom</trans>
+    </entry>
+
+# WBL_PAGE_WHITELIST
+
+    <entry>
+        <base>WHITE_TITLE</base>
+        <trans>Benutzen Sie diese Seite um die "Whitelist" Einstellungen ihres Servers zu ändern.</trans>
+    </entry>
+
+    <entry>
+        <base>RRFH_LABEL</base>
+        <trans>Whitelist Status</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHOSTS_DESCRIPTION</base>
+        <trans>Jede IP Adresse die unter "whitelisthosts" gelistet ist wird beim Verbindungsvorgang nicht weiter überprüft.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHOSTS_LABEL</base>
+        <trans>whitelisthosts </trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHELO_DESCRIPTION</base>
+        <trans>Jeder Host mit einem "HELO" (Begrüßung) die einem Eintrag in der whitelisthelo entspricht wird in der 'helo' phase nicht weiter überprüft.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHELO_LABEL</base>
+        <trans>whitelisthelo</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTSENDERS_DESCRIPTION</base>
+        <trans>Jeder 'envelope'-Sender einer Mail (@host oder user@host) mit einem korrespondierenden Eintrag in whitelistsenders wird während der 'mail' phase nicht weiter überprüft.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTSENDERS_LABEL</base>
+        <trans>whitelistsenders</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTFROM_DESCRIPTION</base>
+        <trans>Jeder 'envelope'-Sender einer Mail (*@host oder user@host) mit einem korrespondierenden Eintrag in whitelist_from wird von spamassassin nicht weiter überprüft.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTFROM_LABEL</base>
+        <trans>whitelist_from</trans>
+    </entry>
+
+</lexicon>

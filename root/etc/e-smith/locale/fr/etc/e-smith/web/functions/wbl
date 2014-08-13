@@ -1,0 +1,133 @@
+<lexicon lang="fr">
+    <!-- vim: ft=xml:
+    -->
+
+# WBL_BUTTONS
+
+    <entry>
+            <base>SAVE</base>
+            <trans>Sauvegarder</trans>
+    </entry>
+
+    <entry>
+            <base>PERFORM</base>
+            <trans>Exécuter</trans>
+    </entry>
+
+# WBL_PAGE_FIRST
+
+    <entry>
+        <base>FORM_TITLE</base>
+        <trans>WBL courriel</trans>
+    </entry>
+
+    <entry>
+        <base>OPERATION_STATUS_REPORT</base>
+        <trans>Rapport d'état de l'opération</trans>
+    </entry>
+
+    <entry>
+        <base>FORM_DESCRIPTION</base>
+        <trans><![CDATA[ <p>Le trafique  courriel est scanné et peut être bloqué par les différentes méthodes activées. Vous pouvez utiliser ce panneau afin de definir les listes blanches et noires de courriel.</p> <p>Les listes noires sont utilisées pour refuser du trafique courriel.</p>  <p><a class="button-like" href="wbl?page=0&page_stack=&Next=Next&wherenext=WBL_PAGE_BLACK">Liste Noire</a></p> <p><br>Les listes blanches sont utilisées pour accepter du trafique courriel.</p>  <p><a class="button-like" href="wbl?page=0&page_stack=&Next=Next&wherenext=WBL_PAGE_WHITE">Liste Blanche</a></p> ]]></trans>
+    </entry>
+
+# WBL_PAGE_BLACK
+
+    <entry>
+        <base>BLACK_TITLE</base>
+        <trans><![CDATA[ <p>Ce serveur inclus un support intégrés afin d'utiliser deux méthodes externes de listes noires, DNSBL et RHSBL. Il permet aussi à l'administrateur de définir des listes noires badhelo et badmailfrom.</p> ]]></trans>
+    </entry>
+
+    <entry>
+        <base>DNSBL_DESCRIPTION</base>
+        <trans>DNSBL est une abréviation Anglaise pour "Liste noire DNS". Il s'agit d'une liste d'adresses IP connues pour être des propagateurs de pourriels (spam).</trans>
+    </entry>
+
+    <entry>
+            <base>DNSBL_LABEL</base>
+            <trans>Statut DNSBL</trans>
+    </entry>
+
+    <entry>
+        <base>RHSBL_DESCRIPTION</base>
+        <trans>RHSBL est une abréviation pour "Right Hand Side Blacklist". C'est une liste de domaines connus pour être spammers</trans>
+    </entry>
+
+    <entry>
+            <base>RHSBL_LABEL</base>
+            <trans>Rapport d'état de RHSBL</trans>
+    </entry>
+
+    <entry>
+        <base>BADHELO_DESCRIPTION</base>
+        <trans>Vérifie un message HELO livré par un hôte se connectant. Ceci refuse tout ceux qui apparaissent dans badhelo au moment de la phase 'helo'.</trans>
+    </entry>
+
+    <entry>
+            <base>BADHELO_LABEL</base>
+            <trans>qpsmtpd badhelo</trans>
+    </entry>
+
+    <entry>
+        <base>BADMAILFROM_DESCRIPTION</base>
+        <trans>Verifie l'adresse de l'expéditeur. Refuse tout ce qui apparait (@hôte ou utilisateur@hôte) dans  'badmailfrom' pendant la phase 'mail'</trans>
+    </entry>
+
+    <entry>
+        <base>BADMAILFROM_LABEL</base>
+        <trans>qmail 'badmailfrom'</trans>
+    </entry>
+
+# WBL_PAGE_WHITELIST
+
+    <entry>
+        <base>WHITE_TITLE</base>
+        <trans>Utilisez cette page pour modifier les paramètres de liste blanche de de votre serveur.</trans>
+    </entry>
+
+    <entry>
+        <base>RRFH_LABEL</base>
+        <trans>État des listes blanches</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHOSTS_DESCRIPTION</base>
+        <trans>Toute IP présente dans whitelisthosts sera exemptée de toutes validations supplémentaires pendant la phase 'connexion'</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHOSTS_LABEL</base>
+        <trans>Qpsmtpd whitelisthosts</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHELO_DESCRIPTION</base>
+        <trans>Tout hôte qui émet un HELO correspondant à une entrée dans whitelisthelo sera exempté de toute autre validation pendant la phase 'helo'</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHELO_LABEL</base>
+        <trans>qpsmtpd whitelisthelo</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTSENDERS_DESCRIPTION</base>
+        <trans>Totu expéditeur d'un courriel (@hôte ou utilisateur@hôte) correspondant à une entrée dans whitelistsenders sera exempté de toute validation supplémentaire pendant la phase 'mail'</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTSENDERS_LABEL</base>
+        <trans>qpsmtpd whitelistsenders</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTFROM_DESCRIPTION</base>
+        <trans>Tout expéditeur d'un courriel (*@hôte ou utilisateur@hôte) correspondant à une entrée dans whitelist_from sera exempté d'un rejet par spamassassin.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTFROM_LABEL</base>
+        <trans>spamassassin whitelist_from</trans>
+    </entry>
+
+</lexicon>

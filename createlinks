@@ -1,0 +1,20 @@
+#!/usr/bin/perl -w
+
+use esmith::Build::CreateLinks qw(:all);
+use File::Basename;
+use File::Path;
+
+my $panel = "manager";
+panel_link("wbl", $panel);
+
+templates2events("/var/qmail/control/badmailfrom", "email-update");
+templates2events("/var/service/qpsmtpd/config/badmailfrom", "email-update");
+templates2events("/var/service/qpsmtpd/config/badhelo", "email-update");
+templates2events("/var/service/qpsmtpd/config/whitelisthelo", "email-update");
+templates2events("/var/service/qpsmtpd/config/whitelisthosts", "email-update");
+templates2events("/var/service/qpsmtpd/config/whitelistsenders", "email-update");
+
+##Symlink qpsmtpd whitlist_soft plugin for external connections
+
+safe_symlink("../../plugins/11whitelist_soft", 
+             "root/etc/e-smith/templates/var/service/qpsmtpd/config/peers/0/11whitelist_soft");

@@ -1,0 +1,4 @@
+{
+    return (whitelist_soft) ;
+	 # for SME 8 RequireResolvableFromHost key is obsolete and always on
+}

@@ -1,0 +1,133 @@
+<lexicon lang="sv">
+    <!-- vim: ft=xml:
+    -->
+
+# WBL_BUTTONS
+
+    <entry>
+            <base>SAVE</base>
+            <trans>Spara</trans>
+    </entry>
+
+    <entry>
+            <base>PERFORM</base>
+            <trans>Verkställ</trans>
+    </entry>
+
+# WBL_PAGE_FIRST
+
+    <entry>
+        <base>FORM_TITLE</base>
+        <trans>E-post WBL</trans>
+    </entry>
+
+    <entry>
+        <base>OPERATION_STATUS_REPORT</base>
+        <trans>Statusrapport över operationerna</trans>
+    </entry>
+
+    <entry>
+        <base>FORM_DESCRIPTION</base>
+        <trans><![CDATA[ <p>E-mail traffic is scanned and may be blocked due to the various screening methods enabled. You may use this panel to define e-mail white/black lists.</p> <p>Black lists are used for rejecting e-mail traffic.</p> <p><a class="button-like" href="wbl?page=0&page_stack=&Next=Next&wherenext=WBL_PAGE_BLACK">Black List</a></p> <p><br>White lists are used for accepting e-mail traffic.</p> <p><a class="button-like" href="wbl?page=0&page_stack=&Next=Next&wherenext=WBL_PAGE_WHITE">White List</a></p> ]]></trans>
+    </entry>
+
+# WBL_PAGE_BLACK
+
+    <entry>
+        <base>BLACK_TITLE</base>
+        <trans><![CDATA[ <p>This server includes built-in support for using two external black list methods, DNSBL and RHSBL. It also supports the admin defined black lists, badhelo and badmailfrom.</p> ]]></trans>
+    </entry>
+
+    <entry>
+        <base>DNSBL_DESCRIPTION</base>
+        <trans>DNSBL är en förkortning av "DNS blacklist". Det är en lista över IP-adressen som är kända för att vara spammare.</trans>
+    </entry>
+
+    <entry>
+            <base>DNSBL_LABEL</base>
+            <trans>DNSBL status</trans>
+    </entry>
+
+    <entry>
+        <base>RHSBL_DESCRIPTION</base>
+        <trans>RHSBL är en förkortning av "Right Hand Side Blacklist". Det är en lista över domännamn som är kända för att vara spammare.</trans>
+    </entry>
+
+    <entry>
+            <base>RHSBL_LABEL</base>
+            <trans>RHSBL status</trans>
+    </entry>
+
+    <entry>
+        <base>BADHELO_DESCRIPTION</base>
+        <trans>Kontrollera HELO-meddelandet som levereras från en anslutande värd. Förkasta alla som syns i badhelo under 'helo'-stadiet.</trans>
+    </entry>
+
+    <entry>
+            <base>BADHELO_LABEL</base>
+            <trans>qpsmtpd badhelo</trans>
+    </entry>
+
+    <entry>
+        <base>BADMAILFROM_DESCRIPTION</base>
+        <trans>Kontrollera meddelandets avsändaradress. Förkasta alla som finns (@host eller i user@host) i dåligtmeddelandefrån under 'mail'-processen.</trans>
+    </entry>
+
+    <entry>
+        <base>BADMAILFROM_LABEL</base>
+        <trans>qmail dåligtmeddelandefrån (badmailfrom)</trans>
+    </entry>
+
+# WBL_PAGE_WHITELIST
+
+    <entry>
+        <base>WHITE_TITLE</base>
+        <trans>Använd denna panel för att modifiera din servers inställningar för vitlista.</trans>
+    </entry>
+
+    <entry>
+        <base>RRFH_LABEL</base>
+        <trans>Vitlistans status</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHOSTS_DESCRIPTION</base>
+        <trans>Alla IP-adresser som finns på vitlistans värdar kommer att undantas från all kommande validering under 'skapa kontakt'-stadiet.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHOSTS_LABEL</base>
+        <trans>qpsmtpd värdar på vitlistan</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHELO_DESCRIPTION</base>
+        <trans>Alla värdar som ger en HELO och som stämmer överens med ett värde i vitlitans helo kommer att undantas från fortsatt validering under 'helo'-stadiet.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHELO_LABEL</base>
+        <trans>qpsmtpd vitlista över helo</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTSENDERS_DESCRIPTION</base>
+        <trans>Alla avsändare av e-post (@host eller user@host) som stämmer överens med ett värde i vitlistans avsändare kommer att undantas från kommande validering under 'mail'-stadiet.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTSENDERS_LABEL</base>
+        <trans>qpsmtpd vitlistans avsändare</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTFROM_DESCRIPTION</base>
+        <trans>Alla avsändare av e-postmeddelande (*@host eller user@host) som stämmer överens med ett värde i vitlistans_från kommer att undantas från förkastning av spamassassin.</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTFROM_LABEL</base>
+        <trans>spamassassin vitlista_från</trans>
+    </entry>
+
+</lexicon>

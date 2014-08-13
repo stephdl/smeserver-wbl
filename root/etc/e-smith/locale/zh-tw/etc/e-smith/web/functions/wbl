@@ -1,0 +1,133 @@
+<lexicon lang="zh-tw">
+    <!-- vim: ft=xml:
+    -->
+
+# WBL_BUTTONS
+
+    <entry>
+            <base>SAVE</base>
+            <trans>儲存</trans>
+    </entry>
+
+    <entry>
+            <base>PERFORM</base>
+            <trans>效能</trans>
+    </entry>
+
+# WBL_PAGE_FIRST
+
+    <entry>
+        <base>FORM_TITLE</base>
+        <trans>E-mail 黑白名單列表</trans>
+    </entry>
+
+    <entry>
+        <base>OPERATION_STATUS_REPORT</base>
+        <trans>運作狀態回報</trans>
+    </entry>
+
+    <entry>
+        <base>FORM_DESCRIPTION</base>
+        <trans><![CDATA[ <p>E-mail傳輸會被掃描並有可能被鎖定，這是因為啟用了多重監控方式。您可以使用此控制台來定義e-mail的黑白名單。</p> <p>黑名單被使用來拒絕e-mail傳送。</p> <p><a class="button-like" href="wbl?page=0&page_stack=&Next=Next&wherenext=WBL_PAGE_BLACK">黑名單</a></p> <p><br>白名單被使用來接受e-mail傳送。</p> <p><a class="button-like" href="wbl?page=0&page_stack=&Next=Next&wherenext=WBL_PAGE_WHITE">白名單</a></p> ]]></trans>
+    </entry>
+
+# WBL_PAGE_BLACK
+
+    <entry>
+        <base>BLACK_TITLE</base>
+        <trans><![CDATA[ <p>此伺服器內建支援兩種外部黑名單機制DNSBL與RHSBL。亦支援可由管理者自行定義的badhelo與badmailfrom。</p> ]]></trans>
+    </entry>
+
+    <entry>
+        <base>DNSBL_DESCRIPTION</base>
+        <trans>DNSBL是"DNS blacklist"縮寫。其為已知垃圾郵件IP位址名單。</trans>
+    </entry>
+
+    <entry>
+            <base>DNSBL_LABEL</base>
+            <trans>DNSBL 狀態</trans>
+    </entry>
+
+    <entry>
+        <base>RHSBL_DESCRIPTION</base>
+        <trans>RHSBL是"Right Hand Side Blacklist"縮寫。其為已知垃圾郵件網域名稱之名單。</trans>
+    </entry>
+
+    <entry>
+            <base>RHSBL_LABEL</base>
+            <trans>RHSBL 狀態</trans>
+    </entry>
+
+    <entry>
+        <base>BADHELO_DESCRIPTION</base>
+        <trans>確認從已連結主機的HELO訊息傳送。在'helo'區域，拒絕任何顯示在badhelo名單的郵件。</trans>
+    </entry>
+
+    <entry>
+            <base>BADHELO_LABEL</base>
+            <trans>qpsmtpd badhelo</trans>
+    </entry>
+
+    <entry>
+        <base>BADMAILFROM_DESCRIPTION</base>
+        <trans>檢查信封上的寄件人地址。在'mail'階段，拒絕任何(@host or user@host)顯示在不良郵件名單的出處。</trans>
+    </entry>
+
+    <entry>
+        <base>BADMAILFROM_LABEL</base>
+        <trans>qmail 壞郵件名單</trans>
+    </entry>
+
+# WBL_PAGE_WHITELIST
+
+    <entry>
+        <base>WHITE_TITLE</base>
+        <trans>通過此控制台來修正伺服器的白名單設定。</trans>
+    </entry>
+
+    <entry>
+        <base>RRFH_LABEL</base>
+        <trans>白名單狀態</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHOSTS_DESCRIPTION</base>
+        <trans>任何出現在「白名單主機」的IP位址在連接階段時將跳過進一步驗證。</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHOSTS_LABEL</base>
+        <trans>qpsmtpd 白名單主機</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHELO_DESCRIPTION</base>
+        <trans>任何出現在「HELO白名單」的主機在'helo'階段時將跳過進一步驗證。</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTHELO_LABEL</base>
+        <trans>qpsmtpd 白名單列表問候</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTSENDERS_DESCRIPTION</base>
+        <trans>郵件(@host or user@host)符合「寄件者白名單」中的信件上的任何寄件人在'mail'階段時將跳過進一步驗證。</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTSENDERS_LABEL</base>
+        <trans>qpsmtpd 白名單列表寄件者</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTFROM_DESCRIPTION</base>
+        <trans>郵件(*@host or user@host)符合「發信白名單」中的信件上的任何寄件人在垃圾郵件攔截階段時將跳過進一步驗證。</trans>
+    </entry>
+
+    <entry>
+        <base>WHITELISTFROM_LABEL</base>
+        <trans>spamassassin 寄件人白名單</trans>
+    </entry>
+
+</lexicon>

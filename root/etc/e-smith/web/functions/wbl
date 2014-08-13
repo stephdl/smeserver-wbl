@@ -1,0 +1,134 @@
+#!/usr/bin/perl -wT
+# vim: ft=xml:
+
+#----------------------------------------------------------------------
+# heading     : Configuration
+# description : E-mail WBL
+# navigation  : 6000 6710
+#----------------------------------------------------------------------
+
+use strict;
+use warnings;
+
+use esmith::FormMagick::Panel::wbl;
+
+my $f = esmith::FormMagick::Panel::wbl->new();
+$f->display();
+
+__DATA__
+<form
+    title="FORM_TITLE"
+    header="/etc/e-smith/web/common/head.tmpl"
+    footer="/etc/e-smith/web/common/foot.tmpl">
+
+    <page name="First" pre-event="print_status_message()">
+
+        <description>FORM_DESCRIPTION</description>
+
+    </page>
+
+    <page name="WBL_PAGE_BLACK"
+            pre-event="turn_off_buttons()"
+            post-event="create_modify_black" >
+
+        <description>BLACK_TITLE</description>
+
+        <field
+            type="select"
+            id="dnsbl"
+            options="'enabled'  => 'Enabled',
+                     'disabled'  => 'Disabled'"
+            value="get_dnsbl()"
+            validation="nonblank">
+            <label>DNSBL_LABEL</label>
+            <description>DNSBL_DESCRIPTION</description>
+        </field>
+
+        <field
+            type="select"
+            id="rhsbl"
+            options="'enabled'  => 'Enabled',
+                     'disabled'  => 'Disabled'"
+            value="get_rhsbl()"
+            validation="nonblank">
+            <label>RHSBL_LABEL</label>
+            <description>RHSBL_DESCRIPTION</description>
+        </field>
+
+        <field
+            type="textarea"
+            id="badhelo"
+	    value="get_badhelo()"
+            validation="">
+            <label>BADHELO_LABEL</label>
+	    <description>BADHELO_DESCRIPTION</description>	    
+        </field>
+
+        <field
+            type="textarea"
+            id="badmailfrom"
+	    value="get_badmailfrom()"
+            validation="">
+            <label>BADMAILFROM_LABEL</label>
+	    <description>BADMAILFROM_DESCRIPTION</description>	    
+        </field>
+
+        <subroutine src="print_button('SAVE')" />
+    </page>
+
+    <page name="WBL_PAGE_WHITE"
+            pre-event="turn_off_buttons()"
+            post-event="create_modify_white" >
+
+        <description>WHITE_TITLE</description>
+
+        <field
+            type="select"
+            id="rrfh"
+            options="'yes'  => 'Enabled',
+                     'no'  => 'Disabled'"
+            value="get_rrfh()"
+            validation="nonblank">
+            <label>RRFH_LABEL</label>
+        </field>
+
+        <field
+            type="textarea"
+            id="whitelisthosts"
+	    value="get_whitelisthosts()"
+            validation="">
+            <label>WHITELISTHOSTS_LABEL</label>
+	    <description>WHITELISTHOSTS_DESCRIPTION</description>	    
+        </field>
+
+        <field
+            type="textarea"
+            id="whitelisthelo"
+	    value="get_whitelisthelo()"
+            validation="">
+            <label>WHITELISTHELO_LABEL</label>
+	    <description>WHITELISTHELO_DESCRIPTION</description>	    
+        </field>
+
+        <field
+            type="textarea"
+            id="whitelistsenders"
+	    value="get_whitelistsenders()"
+            validation="">
+            <label>WHITELISTSENDERS_LABEL</label>
+	    <description>WHITELISTSENDERS_DESCRIPTION</description>	    
+        </field>
+
+        <field
+            type="textarea"
+            id="whitelistfrom"
+            value="get_whitelistfrom()"
+            validation="">
+            <label>WHITELISTFROM_LABEL</label>
+            <description>WHITELISTFROM_DESCRIPTION</description>
+        </field>
+
+        <subroutine src="print_button('SAVE')" />
+    </page>
+
+</form>
